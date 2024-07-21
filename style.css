@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --font-family: 'Inter', sans-serif;
+    --primary-color: #F3F5FC;
+    --secondary-color: #0A3871;
+    --terciary-color: #495057;
+    --quaternary-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 40px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .container-text{
+    width: 680px;
+    height: 100%;
+    margin-left: 40px;
+}
+
+main .container-text form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 20px;
+    width: 85%;
+    height: 85%;
+}
+
+main .container-text form div{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 720px;
+    margin-top: 50px;
+}
+
+main .container-text form div span{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: var(--terciary-color);
+}
+
+main .container-text form textarea{
+    width: 100%;
+    height: 300px;
+    border: none;
+    resize: none;
+    font-family: var(--font-family);
+    font-size: 32px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+}
+
+main .container-text form textarea::-webkit-input-placeholder { 
+    color: var(--secondary-color); 
+}
+
+main .container-text form textarea:focus{
+    outline: none;
+}
+
+main .container-text form button{
+    width: 328px;
+    height: 67px;
+    margin-top: 20px;
+    border-radius: 24px;
+    border: none;
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--quaternary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+main .container-text form #btnDescriptografar{
+    margin-left: 30px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: #D8DFE8;
+}
+
+main .container-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 944px;
+    background-color: var(--quaternary-color);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+main .container-resultado img{
+    width: 336px;
+    height: 304px;
+}
+
+main .container-resultado .banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 336px;
+    margin-top: 20px;
+}
+
+main .container-resultado .banner-text h2{    
+    font-family: var(--font-family);
+    font-size: 24px;
+    color: #343A40;
+    text-align: center;
+}   
+
+main .container-resultado .banner-text p{
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--terciary-color);
+    text-align: center;
+    margin-top: 20px;
+}
