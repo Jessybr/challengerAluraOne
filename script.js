@@ -7,3 +7,7 @@ const text = document.querySelector('.text');
 const banner = document.querySelector('.banner');
 const acentos = ['á','à','é','è','í','ì','ó','ò','ú','ù','ü','ã','õ','ê','ä','ë','ï','ö'];
 
+function checarAcentos(){
+    const texto = areaTexto.value;
+    return acentos.some(el => texto.includes(el));
+}
