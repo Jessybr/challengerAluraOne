@@ -182,7 +182,7 @@ main .container-resultado .resultado button{
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 481px) {
     html{
         width: 100% !important;
     }
@@ -226,7 +226,7 @@ main .container-resultado .resultado button{
         margin: 30px auto 0 auto;
     }
 
-    main .container-text .textForm div{
+    main .container-text .textForm .buttons{
         flex-direction: column;
     }
 
@@ -258,6 +258,67 @@ main .container-resultado .resultado button{
 
     main .container-resultado .resultado button{
         width: 279px;
+        height: 67px;
+        margin: 10px auto;
+    }
+
+}
+
+@media (min-width: 482px) and (max-width: 800px) {
+
+    html{
+        width: 100% !important; 
+        height: 100%;
+    }
+
+    body, main{
+        flex-direction: column !important;
+        height: auto;
+        width: 100% !important;
+        height: 100%;
+    }
+
+    main{
+        justify-content: space-between;
+    }
+
+    header{
+        height: auto;
+    }
+
+    main .container-text .textForm {
+        flex-direction: column;
+    }
+
+    main .container-text .buttons{
+        flex-direction: row;
+    }
+
+    main .container-resultado{
+        width: 688px !important;
+        height: auto;
+        margin: 40px auto 0 auto;
+    }
+
+    main .container-resultado .banner img{
+        display: none;
+    }
+
+    main .container-resultado .resultado{
+        width: 688px;
+        height: auto;
+        padding: 20px 60px;
+    }
+
+    main .container-resultado .resultado .text{
+        width: 624px;
+        height: auto;
+        margin: auto;
+        overflow-x: auto;
+    }
+
+    main .container-resultado .resultado button{
+        width: 624px;
         height: 67px;
         margin: 10px auto;
     }
