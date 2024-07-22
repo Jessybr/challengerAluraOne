@@ -11,3 +11,7 @@ function checarAcentos(){
     const texto = areaTexto.value;
     return acentos.some(el => texto.includes(el));
 }
+
+function possuiLetraMaiuscula(texto) {
+    return /[A-Z]/.test(texto);
+}
