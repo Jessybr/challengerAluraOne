@@ -45,3 +45,7 @@ function descriptografar(){
         text.textContent = textoDescriptografado;
     }
 }
+
+function copiar(){
+    navigator.clipboard.writeText(text.textContent);
+}
