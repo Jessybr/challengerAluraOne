@@ -15,3 +15,18 @@ function checarAcentos(){
 function possuiLetraMaiuscula(texto) {
     return /[A-Z]/.test(texto);
 }
+
+function criptografar(){
+    const texto = areaTexto.value;
+    if (checarAcentos() || possuiLetraMaiuscula(texto)) {
+        alert('Acentos e letras maiúsculas não permitidos. Por favor, remova-os e tente novamente.');
+        areaTexto.value = '';  
+    } else {
+        banner.classList.add('hidden');
+        resultado.classList.remove('hidden');
+        resultado.classList.add('flex');
+        const texto = areaTexto.value;
+        const textoCriptografado = texto.replaceAll('e', 'enter').replaceAll('i', 'imes').replaceAll('a', 'ai').replaceAll('o', 'ober').replaceAll('u', 'ufat');
+        text.textContent = textoCriptografado;
+    }
+}
