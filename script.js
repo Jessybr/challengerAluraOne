@@ -5,6 +5,13 @@ const areaTexto = document.getElementById('areaTexto');
 const resultado = document.querySelector('.resultado');
 const text = document.querySelector('.text');
 const banner = document.querySelector('.banner');
+
+resultado.classList.add('hidden');
+
+btnCopiar.addEventListener('click', copiar);
+btnCriptografar.addEventListener('click', criptografar);
+btnDescriptografar.addEventListener('click', descriptografar);
+
 const acentos = ['á','à','é','è','í','ì','ó','ò','ú','ù','ü','ã','õ','ê','ä','ë','ï','ö'];
 
 function checarAcentos(){
