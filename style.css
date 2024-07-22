@@ -36,6 +36,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    height: 100vh;
 }
 
 main .container-text{
@@ -44,7 +45,7 @@ main .container-text{
     margin-left: 40px;
 }
 
-main .container-text form{
+main .container-text .textForm{
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -54,7 +55,7 @@ main .container-text form{
     height: 85%;
 }
 
-main .container-text form div{
+main .container-text .buttons{
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
@@ -62,7 +63,7 @@ main .container-text form div{
     margin-top: 50px;
 }
 
-main .container-text form div span{
+main .container-text .textForm div span{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -73,7 +74,7 @@ main .container-text form div span{
     color: var(--terciary-color);
 }
 
-main .container-text form textarea{
+main .container-text .textForm textarea{
     width: 100%;
     height: 300px;
     border: none;
@@ -85,15 +86,15 @@ main .container-text form textarea{
 
 }
 
-main .container-text form textarea::-webkit-input-placeholder { 
+main .container-text .textForm textarea::-webkit-input-placeholder { 
     color: var(--secondary-color); 
 }
 
-main .container-text form textarea:focus{
+main .container-text .textForm textarea:focus{
     outline: none;
 }
 
-main .container-text form button{
+main .container-text .textForm button{
     width: 328px;
     height: 67px;
     margin-top: 20px;
@@ -106,7 +107,7 @@ main .container-text form button{
     cursor: pointer;
 }
 
-main .container-text form #btnDescriptografar{
+main .container-text .textForm #btnDescriptografar{
     margin-left: 30px;
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
@@ -119,7 +120,7 @@ main .container-resultado{
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 944px;
+    height: 100%;
     background-color: var(--quaternary-color);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
@@ -152,4 +153,113 @@ main .container-resultado .banner-text p{
     color: var(--terciary-color);
     text-align: center;
     margin-top: 20px;
+}
+
+main .container-resultado .resultado{
+    height: 100%;
+}
+
+main .container-resultado .resultado .text{
+    font-family: var(--font-family);
+    font-size: 24px;
+    color: var(--terciary-color);
+    text-align: start;
+    width: 336px;
+    height: 70%;
+    text-wrap: wrap;
+}   
+
+main .container-resultado .resultado button{
+    width: 336px;
+    height: 67px;
+    margin-top: 20px;
+    border-radius: 24px;
+    border: 1px solid var(--secondary-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--secondary-color);
+    background-color: var(--quaternary-color);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    html{
+        width: 100% !important;
+    }
+
+    body{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    header{
+        height: auto;
+    }
+
+    main{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    main .container-text{
+        margin-bottom: 20px;
+    }
+
+    main .container-text, .container-resultado{
+        width: 100%;
+        margin: 0;
+    }
+
+    main .container-text .textForm, .buttons{
+        width: 100% !important;
+    }
+
+    main .container-text .textForm button{
+        width: 343px;
+        height: 67px;
+        margin: auto;
+    }
+
+    main .container-text .textForm #btnDescriptografar{
+        margin: 30px auto 0 auto;
+    }
+
+    main .container-text .textForm div{
+        flex-direction: column;
+    }
+
+    main .container-resultado .banner img{
+        display: none;
+    }
+
+    main .container-resultado{
+        width: 327px;
+        height: auto;
+        margin: 60px auto 0 auto;
+    }
+
+    main .container-resultado .banner .banner-text{
+        margin: 20px;
+    }
+
+    main .container-resultado .resultado{
+        height: auto;
+        margin: 20px;
+    }
+
+    main .container-resultado .resultado .text{
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        overflow-x: auto;
+    }
+
+    main .container-resultado .resultado button{
+        width: 279px;
+        height: 67px;
+        margin: 10px auto;
+    }
+
 }
