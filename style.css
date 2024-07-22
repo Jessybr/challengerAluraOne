@@ -26,7 +26,7 @@
 body{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     background-color: var(--primary-color);
     padding: 40px;
 }
@@ -35,14 +35,15 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
 }
 
 main .container-text{
-    width: 680px;
+    width: 70%;
     height: 100%;
     margin-left: 40px;
+    margin-right: 20px;
 }
 
 main .container-text .textForm{
@@ -51,7 +52,7 @@ main .container-text .textForm{
     justify-content: space-between;
     margin-top: 100px;
     gap: 20px;
-    width: 85%;
+    width: 100%;
     height: 85%;
 }
 
@@ -59,11 +60,11 @@ main .container-text .buttons{
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    width: 720px;
+    width: 100%;
     margin-top: 50px;
 }
 
-main .container-text .textForm div span{
+main .container-text .textForm .buttons span{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -108,7 +109,7 @@ main .container-text .textForm button{
 }
 
 main .container-text .textForm #btnDescriptografar{
-    margin-left: 30px;
+    margin-left: 2%;
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     background-color: #D8DFE8;
@@ -119,7 +120,7 @@ main .container-resultado{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 30%;
     height: 100%;
     background-color: var(--quaternary-color);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
