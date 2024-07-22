@@ -168,6 +168,7 @@ main .container-resultado .resultado .text{
     width: 336px;
     height: 70%;
     text-wrap: wrap;
+    overflow-x: auto;
 }   
 
 main .container-resultado .resultado button{
